@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Github, Linkedin, MapPin } from "lucide-react";
+import { ArrowDown, Eye, Github, Linkedin, MapPin } from "lucide-react";
 import { personalInfo } from "@/lib/data";
 
 const fadeUp = {
@@ -118,12 +118,13 @@ export default function Hero() {
           </button>
           <a
             href={personalInfo.cvUrl}
-            download
+            target="_blank" 
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-transparent border border-border-light dark:border-night-border text-ink dark:text-night-text font-medium rounded-lg hover:border-amber/50 hover:text-amber transition-all duration-200 hover:-translate-y-0.5"
-            aria-label="Download CV as PDF"
+            aria-label="View CV as PDF"
           >
-            Download CV
-            <Download size={16} aria-hidden="true" />
+            View CV
+            <Eye size={16} aria-hidden="true" />
           </a>
         </motion.div>
 

@@ -95,9 +95,10 @@ export default function Navbar() {
 
           <a
             href={personalInfo.cvUrl}
-            download
+            target="_blank" 
+            rel="noopener noreferrer"
             className="hidden md:flex items-center gap-1.5 px-4 py-2 text-sm font-medium bg-amber text-night rounded-md hover:bg-amber/90 transition-all duration-200 shadow-sm"
-            aria-label="Download CV"
+            aria-label="View CV"
           >
             CV
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -142,10 +143,11 @@ export default function Navbar() {
           ))}
           <a
             href={personalInfo.cvUrl}
-            download
+            target="_blank"  
+            rel="noopener noreferrer"
             className="mt-2 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium bg-amber text-night rounded-md"
           >
-            Download CV
+            View CV
           </a>
         </nav>
       </div>

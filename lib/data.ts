@@ -8,7 +8,7 @@ export const personalInfo = {
     "Multi Agent Orchestration Framework which is a tool to build, test and research the use of multi-agent AI applications using LLMs like GPT-4 for Requirements Engineering.",
   bio: `Hey. I'm Jakub, a full-stack developer based in Carlow, Ireland. I work with Java, C#, JavaScript and Python and enjoy turning rough ideas into clean, usable applications.
   I care about readable code, solid architecture, thoughtful APIs, and UIs that feel snappy. I'm open to freelance work or full-time roles where I can learn, build, and ship live products.`,
-  email: "jakubsokal@email.com",
+  email: "jakubsokal13@gmail.com",
   github: "https://github.com/jakubsokal",
   linkedin: "https://linkedin.com/in/jakubsokal",
   cvUrl: "/Jakub_Sokal_CV_Portfolio.pdf",
