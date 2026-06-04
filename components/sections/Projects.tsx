@@ -1,9 +1,10 @@
 import { getGitHubRepos, getLanguagesForFilter, getTopicsForFilter } from "@/lib/github";
+import type { GitHubRepo } from "@/types";
 import ProjectsClient from "./ProjectsClient";
 
 export default async function Projects() {
   const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME || "jakubsokal";
-  let repos = [];
+  let repos: GitHubRepo[] = [];
   let languages: string[] = [];
   let topics: string[] = [];
 
