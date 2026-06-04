@@ -90,7 +90,7 @@ export const workExperience: WorkExperience[] = [
       "Optimised a high-volume transaction endpoint processing 5,000+ records, reducing response time by 40%.",
       "Built Azure Data Factory pipelines for ETL processes and managed CI/CD deployments across Azure environments.",
     ],
-    technologies: ["C#", ".NET", "React", "SQL Server", "Git"],
+    technologies: ["C#", ".NET", "Angular", "SQL Server", "Git", "Azure Data Factory", "Azure DevOps"],
   },
   {
     id: "2",
@@ -106,7 +106,7 @@ export const workExperience: WorkExperience[] = [
       "Traced a data integrity defect in the Payment Express feature to an upstream service misappending results.",
       "Extended and maintained 30+ RESTful APIs across live payment and data flows.",
     ],
-    technologies: ["C#", ".NET", "React", "SQL Server", "Git"],
+    technologies: ["C#", ".NET", "Angular", "SQL Server", "Git", "Azure DevOps", "Postman", "NUnit"],
   },
 ];
 
