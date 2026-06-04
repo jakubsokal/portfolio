@@ -151,7 +151,7 @@ export default function Contact() {
                   Message sent!
                 </h3>
                 <p className="text-sm text-ink-secondary dark:text-night-secondary-text">
-                  Thanks for reaching out. I'll get back to you soon.
+                  Thanks for reaching out. I&apos;ll  get back to you soon.
                 </p>
               </div>
               <button

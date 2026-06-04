@@ -6,6 +6,7 @@ import { Code2, Layers, Wrench, Database } from "lucide-react";
 import SectionWrapper, { SectionHeader } from "@/components/ui/SectionWrapper";
 import { skillCategories } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const CATEGORY_ICONS: Record<string, React.ElementType> = {
   code: Code2,
