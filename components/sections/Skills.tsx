@@ -85,7 +85,7 @@ export default function Skills() {
       <SectionHeader
         eyebrow="Tech Stack"
         title="Skills & technologies."
-        subtitle="The tools I reach for. From writing code to shipping to production."
+        subtitle="The tools I have experience with."
       />
 
       <div

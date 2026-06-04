@@ -44,24 +44,18 @@ export default function About() {
             ))}
           </div>
 
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[
-              { label: "Location", value: personalInfo.location },
-              { label: "Email", value: personalInfo.email },
-              { label: "Status", value: personalInfo.available ? "Open to opportunities" : "Not available" },
-              { label: "Focus", value: "Java, C#, JavaScript, Python" },
-            ].map((fact) => (
-              <div
-                key={fact.label}
-                className="flex items-baseline gap-2 text-sm"
-              >
-                <span className="font-mono text-xs text-amber shrink-0">{fact.label}:</span>
-                <span className="text-ink-secondary dark:text-night-secondary-text truncate">
-                  {fact.value}
-                </span>
-              </div>
-            ))}
+          <div className="flex items-start gap-3 p-4 rounded-xl bg-amber/5 dark:bg-amber/8 border border-amber/20">
+            <div className="mt-0.5 p-1.5 rounded-lg bg-amber/10 shrink-0">
+              <Zap size={14} className="text-amber" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-xs font-mono text-amber uppercase tracking-wider mb-1">
+                Currently working on
+              </p>
+              <p className="text-sm text-ink-secondary dark:text-night-secondary-text">
+                {personalInfo.currentlyWorkingOn}
+              </p>
+            </div>
           </div>
         </motion.div>
 
@@ -83,19 +77,24 @@ export default function About() {
               </p>
             ))}
           </div>
-
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-amber/5 dark:bg-amber/8 border border-amber/20">
-            <div className="mt-0.5 p-1.5 rounded-lg bg-amber/10 shrink-0">
-              <Zap size={14} className="text-amber" aria-hidden="true" />
-            </div>
-            <div>
-              <p className="text-xs font-mono text-amber uppercase tracking-wider mb-1">
-                Currently working on
-              </p>
-              <p className="text-sm text-ink-secondary dark:text-night-secondary-text">
-                {personalInfo.currentlyWorkingOn}
-              </p>
-            </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { label: "Location", value: personalInfo.location },
+              { label: "Email", value: personalInfo.email },
+              { label: "Status", value: personalInfo.available ? "Open to opportunities" : "Not available" },
+              { label: "Focus", value: "Java, C#, JavaScript, Python" },
+            ].map((fact) => (
+              <div
+                key={fact.label}
+                className="flex items-baseline gap-2 text-sm"
+              >
+                <span className="font-mono text-xs text-amber shrink-0">{fact.label}:</span>
+                <span className="text-ink-secondary dark:text-night-secondary-text truncate">
+                  {fact.value}
+                </span>
+              </div>
+            ))}
           </div>
 
         </motion.div>

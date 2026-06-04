@@ -11,7 +11,7 @@ export default function Education() {
       <SectionHeader
         eyebrow="Academic Background"
         title="Education."
-        subtitle="Formal training that grounded my approach to engineering."
+        subtitle="Coursework, projects, and the fundamentals that stuck."
       />
 
       <div className="space-y-6">
