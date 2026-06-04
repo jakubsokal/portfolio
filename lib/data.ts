@@ -10,7 +10,7 @@ export const personalInfo = {
   I care about readable code, solid architecture, thoughtful APIs, and UIs that feel snappy. I'm open to freelance work or full-time roles where I can learn, build, and ship live products.`,
   email: "jakubsokal13@gmail.com",
   github: "https://github.com/jakubsokal",
-  linkedin: "https://linkedin.com/in/jakubsokal",
+  linkedin: "https://linkedin.com/in/jakub-sokal",
   cvUrl: "/Jakub_Sokal_CV_Portfolio.pdf",
   location: "Carlow, Ireland",
   available: true,
