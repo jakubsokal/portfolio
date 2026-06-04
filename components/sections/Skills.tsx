@@ -59,7 +59,7 @@ function SkillIcon({ icon, name }: { icon: string; name: string }) {
 
   return (
     <div className="w-5 h-5 shrink-0 relative" aria-hidden="true" title={name}>
-      <img
+      <Image
         src={candidates[idx]}
         alt={name}
         width={20}

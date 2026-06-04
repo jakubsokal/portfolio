@@ -63,7 +63,7 @@ export default function ProjectsClient({
     });
 
     return result;
-  }, [repos, search, selectedLanguage, selectedTopic, sort]);
+  }, [repos, search, selectedLanguage, selectedTopic, sort, sortDir]);
 
   const clearFilters = () => {
     setSearch("");
