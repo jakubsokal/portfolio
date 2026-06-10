@@ -158,7 +158,7 @@ export default function ProjectsClient({
                     }}
                     aria-hidden="true"
                   />
-                  <span className="text-xs font-mono px-2 py-1 text-ink-tertiary dark:text-night-secondary-text">
+                  <span className="text-xs font-mono px-2 py-1 rounded border border-border-light dark:border-night-border text-ink-tertiary dark:text-night-secondary-text">
                     {project.language}
                   </span>
                 </span>
