@@ -26,7 +26,7 @@ export const featuredProjects = [
     bullets: [
       "Designed a Java Spring Boot microservices architecture with an API gateway to decouple services.",
       "Implemented secure, stateless session management using JWT authentication.",
-      "Containerized core system services using Docker to ensure consistent deployments across environments.",
+      "Containerised core system services using Docker to ensure consistent deployments across environments.",
       "Developed a responsive React frontend supporting interactive workflows for multiple user roles.",
     ],
     github: "https://github.com/Campus2Company/campus2company",
@@ -36,7 +36,7 @@ export const featuredProjects = [
     name: "SimOrch",
     description: "A domain-specific multi-agent framework built to simulate and automate Requirements Engineering elicitation sessions.",
     bullets: [
-      "Developed specialized agent personas to conduct interactive, real-time requirement extraction sessions.",
+      "Developed specialised agent personas to conduct interactive, real-time requirement extraction sessions.",
       "Engineered a dual-layered evaluation engine using SBERT semantic embeddings and TF-IDF cosine similarity.",
       "Built an LLM integration layer supporting OpenAI, Anthropic, Gemini, and Groq alongside local inference via Ollama.",
       "Created a React UI for scenario monitoring and real-time agent metrics tracking.",
