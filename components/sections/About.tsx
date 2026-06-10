@@ -6,7 +6,7 @@ import SectionWrapper, { SectionHeader } from "@/components/ui/SectionWrapper";
 import { personalInfo } from "@/lib/data";
 
 const stats = [
-  { value: "1", label: "Years of experience" },
+  { value: "1", label: "Year of experience" },
   { value: "10+", label: "Projects shipped" },
   { value: "4", label: "Languages" },
   { value: "∞", label: "Cups of coffee" },

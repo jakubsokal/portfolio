@@ -23,27 +23,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jakub Sokal - Full Stack Developer",
+  title: "Jakub Sokal - Software Engineer",
   description:
-    "Portfolio of Jakub Sokal, a Full Stack Developer based in Kilkenny, Ireland. Specialising in Java, C#, JavaScript and Python. Available for new opportunities.",
-  keywords: ["Full Stack Developer", "Java", "C#", "JavaScript", "Python", "React", "Spring Boot", "Portfolio", "Kilkenny", "Ireland"],
+    "Portfolio of Jakub Sokal, a Software Engineer based in Carlow, Ireland. Specialising in Java, C#, JavaScript and Python. Available for new opportunities.",
+  keywords: ["Software Engineer", "Java", "C#", "JavaScript", "Python", "React", "Spring Boot", "Portfolio", "Carlow", "Ireland"],
   authors: [{ name: "Jakub Sokal" }],
   openGraph: {
     type: "website",
     locale: "en_IE",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://jakubsokal.dev",
-    title: "Jakub Sokal - Full Stack Developer",
-    description: "Full Stack Developer building scalable web applications.",
+    title: "Jakub Sokal - Software Engineer",
+    description: "Software Engineer building scalable web applications.",
     siteName: "Jakub Sokal Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jakub Sokal - Full Stack Developer",
-    description: "Full Stack Developer building scalable web applications.",
+    title: "Jakub Sokal - Software Engineer",
+    description: "Software Engineer building scalable web applications.",
   },
-  robots: {
+    robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
 };
 

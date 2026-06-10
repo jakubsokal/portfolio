@@ -2,12 +2,15 @@ import type { WorkExperience, Education, Testimonial, SkillCategory, NavLink } f
 
 export const personalInfo = {
   name: "Jakub Sokal",
-  title: "Full Stack Developer",
+  title: "Software Engineer",
   tagline: "I build useful web apps. I make friendly React frontends and solid Java/C# backends.",
   currentlyWorkingOn:
-    "Multi Agent Orchestration Framework which is a tool to build, test and research the use of multi-agent AI applications using LLMs like GPT-4 for Requirements Engineering.",
-  bio: `Hey. I'm Jakub, a full-stack developer based in Carlow, Ireland. I work with Java, C#, JavaScript and Python and enjoy turning rough ideas into clean, usable applications.
-  I care about readable code, solid architecture, thoughtful APIs, and UIs that feel snappy. I'm open to freelance work or full-time roles where I can learn, build, and ship live products.`,
+    `Raft Consensus Engine, a distributed consensus algorithm built from scratch in Go. Implements leader election, log 
+    replication, and fault tolerance across multiple nodes. Includes chaos testing that deliberately drops network messages 
+    and kills servers mid-operation to prove correctness under failure, not just happy paths.`,
+  bio: `Hey. I'm Jakub, a software engineer based in Carlow, Ireland. I work with Java, C#, JavaScript and Python and 
+  enjoy turning rough ideas into clean, usable applications. I care about readable code, solid architecture, thoughtful APIs, 
+  and UIs that feel snappy. I'm open to freelance work or full-time roles where I can learn, build, and ship live products.`,
   email: "jakubsokal13@gmail.com",
   github: "https://github.com/jakubsokal",
   linkedin: "https://linkedin.com/in/jakub-sokal",
@@ -15,6 +18,33 @@ export const personalInfo = {
   location: "Carlow, Ireland",
   available: true,
 };
+
+export const featuredProjects = [
+  {
+    name: "Campus2Company",
+    description: "A microservices-based platform connecting students, universities, and businesses through industry-led final year projects.",
+    bullets: [
+      "Designed a Java Spring Boot microservices architecture with an API gateway to decouple services.",
+      "Implemented secure, stateless session management using JWT authentication.",
+      "Containerized core system services using Docker to ensure consistent deployments across environments.",
+      "Developed a responsive React frontend supporting interactive workflows for multiple user roles.",
+    ],
+    github: "https://github.com/Campus2Company/campus2company",
+    language: "Java",
+  },
+  {
+    name: "SimOrch",
+    description: "A domain-specific multi-agent framework built to simulate and automate Requirements Engineering elicitation sessions.",
+    bullets: [
+      "Developed specialized agent personas to conduct interactive, real-time requirement extraction sessions.",
+      "Engineered a dual-layered evaluation engine using SBERT semantic embeddings and TF-IDF cosine similarity.",
+      "Built an LLM integration layer supporting OpenAI, Anthropic, Gemini, and Groq alongside local inference via Ollama.",
+      "Created a React UI for scenario monitoring and real-time agent metrics tracking.",
+    ],
+    github: "https://github.com/jakubsokal/SimOrch-Framework",
+    language: "Python",
+  },
+];
 
 export const navLinks: NavLink[] = [
   { label: "About", href: "#about" },
