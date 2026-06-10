@@ -8,6 +8,7 @@ import SectionWrapper, { SectionHeader } from "@/components/ui/SectionWrapper";
 import type { GitHubRepo } from "@/types";
 import { cn } from "@/lib/utils";
 import { featuredProjects } from "@/lib/data";
+import { LANGUAGE_COLORS } from "@/lib/types";
 
 interface ProjectsClientProps {
   repos: GitHubRepo[];
@@ -42,7 +43,7 @@ export default function ProjectsClient({
         (r) =>
           r.name.toLowerCase().includes(q) ||
           r.description?.toLowerCase().includes(q) ||
-          r.topics?.some((t) => t.toLowerCase().includes(q))
+          r.topics?.some((t) => t.toLowerCase().includes(q)),
       );
     }
 
@@ -116,7 +117,8 @@ export default function ProjectsClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="group p-6 rounded-xl border border-border-light dark:border-night-border bg-canvas dark:bg-night-secondary flex flex-col gap-4 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/5 transition-all duration-300"            >
+              className="group p-6 rounded-xl border border-border-light dark:border-night-border bg-canvas dark:bg-night-secondary flex flex-col gap-4 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/5 transition-all duration-300"
+            >
               <div className="flex items-start justify-between">
                 <h3 className="text-lg font-display font-semibold text-ink dark:text-night-text group-hover:text-amber transition-colors">
                   {project.name}
@@ -140,14 +142,25 @@ export default function ProjectsClient({
                     key={j}
                     className="flex gap-2 text-sm text-ink-secondary dark:text-night-secondary-text"
                   >
-                    <span className="text-amber mt-0.5 shrink-0">›</span>
+                    <span className="text-amber mt-0.5 shrink-0">•</span>
                     {bullet}
                   </li>
                 ))}
               </ul>
               <div className="mt-auto pt-2">
-                <span className="text-xs font-mono px-2 py-1 rounded border border-border-light dark:border-night-border text-ink-tertiary dark:text-night-secondary-text">
-                  {project.language}
+                <span className="flex items-center gap-1.5">
+                  <span
+                    className="w-2.5 h-2.5 rounded-full shrink-0"
+                    style={{
+                      backgroundColor: project.language
+                        ? LANGUAGE_COLORS[project.language] ?? LANGUAGE_COLORS.default
+                        : LANGUAGE_COLORS.default,
+                    }}
+                    aria-hidden="true"
+                  />
+                  <span className="text-xs font-mono px-2 py-1 text-ink-tertiary dark:text-night-secondary-text">
+                    {project.language}
+                  </span>
                 </span>
               </div>
             </motion.div>
@@ -216,16 +229,14 @@ export default function ProjectsClient({
                 <button
                   key={lang}
                   onClick={() =>
-                    setSelectedLanguage(
-                      selectedLanguage === lang ? null : lang
-                    )
+                    setSelectedLanguage(selectedLanguage === lang ? null : lang)
                   }
                   aria-pressed={selectedLanguage === lang}
                   className={cn(
                     "px-3 py-1 rounded-full text-xs font-medium border transition-all duration-200",
                     selectedLanguage === lang
                       ? "bg-amber text-night border-amber"
-                      : "bg-transparent border-border-light dark:border-night-border text-ink-secondary dark:text-night-secondary-text hover:border-amber/50 hover:text-amber"
+                      : "bg-transparent border-border-light dark:border-night-border text-ink-secondary dark:text-night-secondary-text hover:border-amber/50 hover:text-amber",
                   )}
                 >
                   {lang}
@@ -254,7 +265,7 @@ export default function ProjectsClient({
                     "px-3 py-1 rounded-full text-xs border transition-all duration-200",
                     selectedTopic === topic
                       ? "bg-amber/15 text-amber border-amber/40"
-                      : "bg-transparent border-border-light dark:border-night-border text-ink-secondary dark:text-night-secondary-text hover:border-amber/40 hover:text-amber"
+                      : "bg-transparent border-border-light dark:border-night-border text-ink-secondary dark:text-night-secondary-text hover:border-amber/40 hover:text-amber",
                   )}
                 >
                   #{topic}

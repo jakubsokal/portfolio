@@ -4,24 +4,7 @@ import { ExternalLink, Github, Star, GitFork, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import type { GitHubRepo } from "@/types";
 import { formatRepoName, timeAgo } from "@/lib/utils";
-
-const LANGUAGE_COLORS: Record<string, string> = {
-  TypeScript: "#3178C6",
-  JavaScript: "#F7DF1E",
-  Python: "#3776AB",
-  Go: "#00ADD8",
-  Rust: "#CE422B",
-  Java: "#B07219",
-  "C++": "#F34B7D",
-  Ruby: "#CC342D",
-  Swift: "#FA7343",
-  Kotlin: "#A97BFF",
-  CSS: "#563D7C",
-  HTML: "#E34C26",
-  Shell: "#89E051",
-  Dockerfile: "#2496ED",
-  default: "#8892A4",
-};
+import { LANGUAGE_COLORS } from "@/lib/types";
 
 interface ProjectCardProps {
   repo: GitHubRepo;
