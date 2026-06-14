@@ -3,7 +3,8 @@ import type { WorkExperience, Education, Testimonial, SkillCategory, NavLink } f
 export const personalInfo = {
   name: "Jakub Sokal",
   title: "Software Engineer",
-  tagline: "I build useful web apps. I make friendly React frontends and solid Java/C# backends.",
+  tagline: `I build full-stack applications with a strong focus on the backend. I care about clean architecture, 
+  reliable APIs, and shipping code that holds up in production.`,
   currentlyWorkingOn:
     `Raft Consensus Engine, a distributed consensus algorithm built from scratch in Go. Implements leader election, log 
     replication, and fault tolerance across multiple nodes. Includes chaos testing that deliberately drops network messages 
@@ -28,6 +29,8 @@ export const featuredProjects = [
       "Implemented secure, stateless session management using JWT authentication.",
       "Containerised core system services using Docker to ensure consistent deployments across environments.",
       "Developed a responsive React frontend supporting interactive workflows for multiple user roles.",
+      "Integrated Kafka for async event-driven messaging between microservices.",
+      "Built a full JWT auth system with access tokens, refresh tokens, and long-lived tokens for session management across services.",
     ],
     github: "https://github.com/Campus2Company/campus2company",
     language: "Java",
@@ -78,6 +81,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "Next.js", icon: "nextdotjs", color: "#000000" },
       { name: "Node.js", icon: "nodejs", color: "#339933" },
       { name: "Tailwind CSS", icon: "tailwindcss", color: "#06B6D4" },
+      { name: "Angular", icon: "angular", color: "#DD0031" },
+      { name: "Kafka", icon: "kafka", color: "#231F20" },
+      { name: "Redis", icon: "redis", color: "#D82C20" },
     ],
   },
   {
@@ -101,6 +107,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "MongoDB", icon: "mongodb", color: "#47A248" },
       { name: "PyTorch", icon: "pytorch", color: "#EE4C2C" },
       { name: "Hugging Face", icon: "huggingface", color: "#FFD21E" },
+      { name: "LangChain", icon: "langchain", color: "#F9A825" },
     ],
   },
 ];
@@ -111,7 +118,7 @@ export const workExperience: WorkExperience[] = [
     title: "Associate Software Developer",
     company: "AMCS Group",
     location: "Limerick, Ireland",
-    startDate: "May 2025",
+    startDate: "Jun 2025",
     endDate: "Aug 2025",
     current: false,
     responsibilities: [
