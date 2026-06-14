@@ -96,6 +96,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "Linux", icon: "linux", color: "#FCC624" },
       { name: "VS Code", icon: "visualstudiocode", color: "#007ACC" },
       { name: "IntelliJ", icon: "intellijidea", color: "#000000" },
+      { name: "Postman", icon: "postman", color: "#FF6C37" },
+      { name: "Azure DevOps", icon: "azuredevops", color: "#0078D4" },
+      { name: "Visual Studio", icon: "visualstudio", color: "#5C2D91" },
     ],
   },
   {
