@@ -25,7 +25,7 @@ export default function ProjectCard({ repo, index }: ProjectCardProps) {
       aria-label={`Project: ${formatRepoName(repo.name)}`}
     >
       <div className="flex items-start justify-between gap-2 mb-3">
-        <h3 className="font-display font-semibold text-lg text-ink dark:text-night-text group-hover:text-amber transition-colors line-clamp-1">
+        <h3 className="font-display font-semibold text-lg text-ink dark:text-night-text group-hover:text-amber transition-colors">
           {formatRepoName(repo.name)}
         </h3>
         <div className="flex items-center gap-1 shrink-0">
@@ -54,7 +54,7 @@ export default function ProjectCard({ repo, index }: ProjectCardProps) {
         </div>
       </div>
 
-      <p className="text-sm md:text-[0.95rem] text-ink-secondary dark:text-night-secondary-text line-clamp-3 flex-1 mb-4 leading-relaxed">
+      <p className="text-sm md:text-[0.95rem] text-ink-secondary dark:text-night-secondary-text flex-1 mb-4 leading-relaxed">
         {repo.description || "No description provided."}
       </p>
 
