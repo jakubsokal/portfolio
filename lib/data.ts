@@ -69,6 +69,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "JavaScript", icon: "javascript", color: "#F7DF1E" },
       { name: "Python", icon: "python", color: "#3776AB" },
       { name: "SQL", icon: "postgresql", color: "#336791" },
+      { name: "Go", icon: "go", color: "#00ADD8" },
+      { name: "C++", icon: "cplusplus", color: "#00599C" },
     ],
   },
   {
@@ -84,6 +86,10 @@ export const skillCategories: SkillCategory[] = [
       { name: "Angular", icon: "angular", color: "#DD0031" },
       { name: "Kafka", icon: "kafka", color: "#231F20" },
       { name: "Redis", icon: "redis", color: "#D82C20" },
+      { name: "FastAPI", icon: "fastapi", color: "#009688" },
+      { name: "Entity Framework", icon: "dotnet", color: "#512BD4" },
+      { name: "LangChain", icon: "langchain", color: "#F9A825" },
+
     ],
   },
   {
@@ -99,6 +105,10 @@ export const skillCategories: SkillCategory[] = [
       { name: "Postman", icon: "postman", color: "#FF6C37" },
       { name: "Azure DevOps", icon: "azuredevops", color: "#0078D4" },
       { name: "Visual Studio", icon: "visualstudio", color: "#5C2D91" },
+      { name: "CI/CD", icon: "cicd", color: "#F05032" },
+      { name: "NUnit", icon: "dotnet", color: "#512BD4" },
+      { name: "Azure Data Factory", icon: "datafactory", color: "#0078D4" },
+      { name: "Azure", icon: "azure", color: "#0078D4" },
     ],
   },
   {
@@ -110,7 +120,13 @@ export const skillCategories: SkillCategory[] = [
       { name: "MongoDB", icon: "mongodb", color: "#47A248" },
       { name: "PyTorch", icon: "pytorch", color: "#EE4C2C" },
       { name: "Hugging Face", icon: "huggingface", color: "#FFD21E" },
-      { name: "LangChain", icon: "langchain", color: "#F9A825" },
+      { name: "Microsoft SQL Server", icon: "msserver", color: "#CC2927" },
+      { name: "SQLite", icon: "sqlite", color: "#003B57" },
+      { name: "TensorFlow", icon: "tensorflow", color: "#FF6F00" },
+      { name: "Supabase", icon: "supabase", color: "#3ECF8E" },
+      { name: "Ollama", icon: "ollama", color: "#000000" },
+      { name: "OpenAI API", icon: "openai", color: "#412991" },
+      { name: "SBERT", icon: "sbert", color: "#FF6F00" },
     ],
   },
 ];

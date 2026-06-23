@@ -23,6 +23,17 @@ const mappings = {
   postgresql: ["postgresql", "postgres"],
   huggingface: ["huggingface", "hugging-face"],
   csharp: ["csharp", "c#"],
+  go: ["go", "golang"],
+  cplusplus: ["cplusplus", "c++", "cpp"],
+  fastapi: ["fastapi"],
+  azure: ["azure"],
+  microsoftsqlserver: ["microsoftsqlserver", "mssql"],
+  entityframework: ["dotnet", "dotnetcore"],   // no EF icon in devicon — falls back to .NET logo
+  azuredevops: ["azuredevops", "azure-devops"],
+  azuredatafactory: ["azure"],
+  ollama: ["ollama"],
+  openai: ["openai"],
+  sbert: ["sbert"],
 };
 
 function tryDownload(url) {

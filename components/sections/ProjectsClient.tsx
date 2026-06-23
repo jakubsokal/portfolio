@@ -28,7 +28,7 @@ export default function ProjectsClient({
   const [search, setSearch] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-  const [sort, setSort] = useState<SortOption>("stars");
+  const [sort, setSort] = useState<SortOption>("updated");
   const [sortDir, setSortDir] = useState<"desc" | "asc">("desc");
   const [showAllTopics, setShowAllTopics] = useState(false);
 

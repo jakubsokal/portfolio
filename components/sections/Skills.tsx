@@ -17,6 +17,7 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
 
 function SkillIcon({ icon, name }: { icon: string; name: string }) {
   const [idx, setIdx] = useState(0);
+  const iconSizeClass = "w-6 h-6";
 
   const mappings: Record<string, string[]> = {
     springboot: ["springboot", "spring-boot", "spring"],
@@ -49,7 +50,10 @@ function SkillIcon({ icon, name }: { icon: string; name: string }) {
   if (idx >= candidates.length) {
     return (
       <div
-        className="w-5 h-5 shrink-0 rounded-full bg-amber/30 flex items-center justify-center text-xs font-medium text-night"
+        className={cn(
+          "shrink-0 rounded-full bg-amber/30 flex items-center justify-center text-xs font-medium text-night",
+          iconSizeClass
+        )}
         aria-hidden="true"
         title={name}
       >
@@ -59,13 +63,17 @@ function SkillIcon({ icon, name }: { icon: string; name: string }) {
   }
 
   return (
-    <div className="w-5 h-5 shrink-0 relative" aria-hidden="true" title={name}>
+    <div
+      className={cn("shrink-0 relative", iconSizeClass)}
+      aria-hidden="true"
+      title={name}
+    >
       <Image
         src={candidates[idx]}
         alt={name}
-        width={20}
-        height={20}
-        className="object-contain w-5 h-5"
+        width={24}
+        height={24}
+        className="object-contain w-full h-full"
         onError={() => setIdx((i) => i + 1)}
       />
     </div>
