@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" role="img" aria-labelledby="title">
-  <title id="title">LangChain icon</title>
-  <defs>
-    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8b5cf6"/>
-      <stop offset="1" stop-color="#06b6d4"/>
-    </linearGradient>
-  </defs>
-  <g fill="none" stroke="url(#lg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M7.5 8.5a4 4 0 015.657 0l1.414 1.414a4 4 0 010 5.657l-1.414 1.414"/>
-    <path d="M16.5 15.5a4 4 0 01-5.657 0l-1.414-1.414a4 4 0 010-5.657l1.414-1.414"/>
-  </g>
-</svg>
+<svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>LangChain</title><path d="M7.531 15.976a7.534 7.534 0 000-10.651L2.206 0A7.537 7.537 0 000 5.326c0 1.996.794 3.913 2.206 5.325l5.325 5.325zM18.674 16.469a7.535 7.535 0 00-10.65 0l5.325 5.325a7.536 7.536 0 0010.651 0l-5.326-5.325zM2.218 21.782a7.536 7.536 0 005.326 2.206v-7.531H.012c0 1.996.795 3.914 2.206 5.325zM20.73 8.595a7.534 7.534 0 00-10.651.001l5.325 5.326 5.326-5.327z" fill="#7FC8FF"></path></svg>
